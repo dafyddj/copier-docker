@@ -31,6 +31,7 @@ jobs:
         # First run `semantic-release` to analyze whether a release is required
         id: sem-rel
         with:
+          dry-run: true
           plugins: |
             [ "@semantic-release/commit-analyzer" ]
         env:
